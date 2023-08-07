@@ -1,0 +1,50 @@
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.item3 {
+  grid-area: footer;
+ 
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header   '
+      ' main main main  '
+      ' footer footer footer  ';
+
+    background-color: rgb(161, 188, 199);
+    padding: 1px;
+    grid-template-rows: 15vh 75vh 10vh;
+  }
+
+  .grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  
+
+  .circular--square {
+    border-radius: 50%;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+  }
+  h1,h2,p{
+    font-family: 'Inter', sans-serif;
+  }
